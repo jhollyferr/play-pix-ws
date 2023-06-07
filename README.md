@@ -8,9 +8,7 @@ Our app is a powerful web scraping tool specifically designed for collecting bet
 
 ### Installation
 
-- [x] `gh repo clone jhollyferr/play-pix-ws` or
-- [x] `g clone git@github.com:jhollyferr/play-pix-ws.git` or
-- [x] `g clone https://github.com/jhollyferr/play-pix-ws.git`
+- [x] `curl -L https://github.com/jhollyferr/play-pix-ws.git -o play-pix-ws`
 - [x] `cd play-pix-ws`
 - [x] `yarn install` or `npm install`
 

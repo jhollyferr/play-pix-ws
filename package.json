@@ -1,0 +1,12 @@
+{
+  "name": "play-pix-script",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "puppeteer": "^20.5.0"
+  }
+}

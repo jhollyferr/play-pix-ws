@@ -1,14 +1,21 @@
 const puppteer = require("puppeteer");
 
+const { input } = require("@inquirer/prompts");
+
 (async () => {
   // const browser = await puppteer.launch({ headless: false });
+
+  const url = await input({ message: "Enter URL: " });
+
+  if (!url) process.exit(1);
+
+  console.log(url);
+
   const browser = await puppteer.launch({ headless: "new" });
 
   const page = await browser.newPage();
 
-  await page.goto(
-    "https://www.playpix.com/pb/sports/pre-match/event-view/Soccer/Brazil/1792/22233481"
-  );
+  await page.goto(url);
 
   await page.waitForSelector(".sgm-market-g-head-bc");
 

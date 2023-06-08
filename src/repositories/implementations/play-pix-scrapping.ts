@@ -6,6 +6,9 @@ import { ScrappingRepository } from '../scrapping';
 
 export class PlayPixRepository implements ScrappingRepository {
 	async collect({ zone, game_id, competition_id }: Body): Promise<Extract[]> {
+		console.log({
+			url: `${Env.PLAY_PIX_URL}/${zone}/${competition_id}/${game_id}`,
+		});
 		return new Promise<Extract[]>(async (resolve, reject) => {
 			try {
 				const browser = await puppeteer.launch({ headless: 'new' });

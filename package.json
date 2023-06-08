@@ -4,10 +4,27 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "dev": "tsx watch src/server.ts",
+    "start": "node build/server.js"
   },
   "dependencies": {
-    "@inquirer/prompts": "^2.1.0",
-    "puppeteer": "^20.5.0"
+    "dotenv": "^16.1.4",
+    "fastify": "^4.17.0",
+    "puppeteer": "^20.5.0",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^16.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "prettier": "^2.8.8",
+    "tsup": "^6.7.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.3"
   }
 }
